@@ -13,10 +13,13 @@ def cmds():
 @click.argument('project_name', type=str)
 def startproject(project_name):
     click.echo(u'Bottle Boilerplate start new project...')
+    repo_name = project_name.lower().replace(' ', '-')
+    app_name = repo_name.replace("-", "")
     extra_context = {
         'project_name': project_name,
-        "repo_name": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
-        "pkg_name": "{{ cookiecutter.repo_name|replace('-', '') }}"
+        "repo_name": repo_name,
+        "app_name": app_name,
+        "pkg_name": app_name
     }
     cookiecutter(
         'https://github.com/avelino/cookiecutter-bottle.git',
