@@ -45,5 +45,7 @@ setup(name='bottle-boilerplate',
       entry_points={
           'console_scripts': ["bottle = bottle_boilerplate:main"]
       },
+      py_modules=['bottle_boilerplate'],
+      scripts=['bottle_boilerplate.py'],
       include_package_data=True,
       zip_safe=False)
