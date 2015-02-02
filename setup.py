@@ -31,7 +31,7 @@ except:
 url = 'https://github.com/avelino/bottle-boilerplate'
 
 setup(name='bottle-boilerplate',
-      version=0.2,
+      version=0.2.1,
       description=description,
       long_description=long_description,
       classifiers=classifiers,
