@@ -1,2 +1,2 @@
 cookiecutter
-click==3.3
+click==4.0
