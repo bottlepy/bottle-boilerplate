@@ -20,8 +20,14 @@ Start new project:
 
     .. code-block:: bash
 
-        bottle startproject YOU-PROJECT-NAME
+        bottle startproject YOUR-PROJECT-NAME
+        cd YOUR-PROJECT-NAME
+        pip install -r requirements.txt
 
+To run your application:
+
+    .. code-blick:: bash
+        python manage.py runserver
 
 Open Bottle documentation:
 
