@@ -26,7 +26,7 @@ Start new project:
 
 To run your application:
 
-    .. code-blick:: bash
+    .. code-block:: bash
         
         python manage.py runserver
 
