@@ -27,6 +27,7 @@ Start new project:
 To run your application:
 
     .. code-blick:: bash
+        
         python manage.py runserver
 
 Open Bottle documentation:
