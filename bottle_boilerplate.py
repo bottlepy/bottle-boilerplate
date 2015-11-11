@@ -28,6 +28,24 @@ def startproject(project_name):
 
 
 @cmds.command()
+@click.argument('project_name', type=str)
+def sample(project_name):
+    click.echo(u'Bottle Boilerplate start new sample project...')
+    repo_name = project_name.lower().replace(' ', '-')
+    app_name = repo_name.replace("-", "")
+    extra_context = {
+        'project_name': project_name,
+        "repo_name": repo_name,
+        "app_name": app_name,
+        "pkg_name": app_name
+    }
+    cookiecutter(
+        'https://github.com/avelino/cookiecutter-bottle-sample.git',
+        no_input=True,
+        extra_context=extra_context)
+
+
+@cmds.command()
 @click.option('--version', type=str, default="dev",
               help=u'Set version to search!')
 def doc(version):
