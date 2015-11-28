@@ -35,5 +35,5 @@ Open Bottle documentation:
 
     .. code-block:: bash
 
-        bottle doc
+        bottle-boilerplate doc
 
