@@ -43,7 +43,7 @@ setup(name='bottle-boilerplate',
       license="MIT",
       install_requires=REQUIREMENTS,
       entry_points={
-          'console_scripts': ["bottle = bottle_boilerplate:main"]
+          'console_scripts': ["bottle-boilerplate = bottle_boilerplate:main"]
       },
       py_modules=['bottle_boilerplate'],
       scripts=['bottle_boilerplate.py'],
