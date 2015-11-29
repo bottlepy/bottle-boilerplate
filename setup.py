@@ -28,7 +28,7 @@ try:
 except:
     long_description = description
 
-url = 'https://github.com/avelino/bottle-boilerplate'
+url = 'https://github.com/bottlepy/bottle-boilerplate'
 
 setup(name='bottle-boilerplate',
       version=0.3,
