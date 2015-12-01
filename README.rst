@@ -5,6 +5,12 @@ bottle-boilerplate
 Boilerplate code for new Bottle projects
 
 
+What Bottle Boilerplate does?
+-----------------------------
+
+Build an structure to create applications in the rigth way with Bottle, using MVC (Model-View-Controller) and Tests.
+
+
 Installation
 ------------
 
